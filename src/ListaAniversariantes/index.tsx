@@ -82,7 +82,7 @@ const columns: GridColDef[] = [
   {
     field: 'birthDate',
     headerName: 'Data 📅',
-    minWidth: 100,
+    minWidth: 120,
     headerAlign: 'left',
     align: 'left',
     valueGetter: (params: GridValueGetterParams) => {
