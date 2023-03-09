@@ -156,7 +156,7 @@ const ListaAniversariantes = () => {
           />
         </Box>
         <Typography
-          variant="h1"
+          variant="h6"
           color="red"
           //sx={{ boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)' }}
         >
