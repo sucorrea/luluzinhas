@@ -131,7 +131,7 @@ export const rows = [
     },
     {
       id: 14,
-      nome: 'Cassia',
+      nome: 'Cássia',
       birthDate: new Date('2000-12-11'),
       responsavel: 'Carol Maita',
       foto: Cassia,
