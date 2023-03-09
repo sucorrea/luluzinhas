@@ -10,6 +10,7 @@ import Nani from '../assets/fotos/Nani.jpg'
 import AnaPaulaMaita from '../assets/fotos/AnaPaulaMaita.jpg'
 import Camila from '../assets/fotos/Camila.jpg'
 import Deia from '../assets/fotos/Deia.jpg'
+import Stella from '../assets/fotos/Stella.jpg'
 
 export const rows = [
     {
@@ -27,7 +28,7 @@ export const rows = [
       birthDate: new Date('2000-01-18'),
       responsavel: 'Stella',
       foto: AnaPaulaMaita,
-      fotoResponsavel: '',
+      fotoResponsavel: Stella,
       iconeSigno: 'noto-v1:capricorn',
     },
     {
@@ -35,7 +36,7 @@ export const rows = [
       nome: 'Stella',
       birthDate: new Date('2000-04-04'),
       responsavel: 'Vanessa',
-      foto: '',
+      foto: Stella,
       fotoResponsavel: Vanessa,
       iconeSigno: 'noto-v1:aries',
     },

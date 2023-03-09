@@ -10,6 +10,8 @@ import { Icon } from '@iconify/react'
 
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
+
 import { rows } from './dados'
 import Luluzinha from '../assets/fotos/luluzinha.jpg'
 type MonthsNumbers = 1 | 4 | 5 | 8 | 9 | 10 | 11 | 12
@@ -136,16 +138,15 @@ const ListaAniversariantes = () => {
       <Grid
         item
         xs={12}
-        md={4}
-        lg={4}
-        sx={{ display: { sm: 'none', xs: 'none', lg: 'flex', md: 'flex' } }}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
       >
-        <Box>
-          <img src={Luluzinha} alt="Luluzinha" />
-        </Box>
-      </Grid>
-      <Grid item xs={12} md={8} lg={8}>
-        <Box>
+        <Box
+          sx={{ display: 'flex', alignItems: 'start', justifyContent: 'start' }}
+        >
           <img
             src={Luluzinha}
             alt="Luluzinha"
@@ -154,6 +155,36 @@ const ListaAniversariantes = () => {
             //style={{ border: 'solid' }}
           />
         </Box>
+        <Typography
+          variant="h1"
+          color="red"
+          //sx={{ boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)' }}
+        >
+          Luluzinha 2023
+        </Typography>{' '}
+      </Grid>
+      {/* <Grid
+        item
+        xs={12}
+        md={4}
+        lg={4}
+        sx={{ display: { sm: 'none', xs: 'none', lg: 'flex', md: 'flex' } }}
+      >
+        <Box>
+          <img src={Luluzinha} alt="Luluzinha" />
+        </Box>
+      </Grid> */}
+
+      <Grid
+        item
+        xs={12}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         <Box
           sx={{
             // display: 'flex',
