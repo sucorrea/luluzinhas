@@ -1,18 +1,20 @@
-import * as React from 'react'
+import React from 'react'
+
+import Avatar from '@mui/material/Avatar'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 import {
   DataGrid,
   GridColDef,
   GridRenderCellParams,
   GridValueGetterParams,
 } from '@mui/x-data-grid'
-import { Avatar } from '@mui/material'
 import { Icon } from '@iconify/react'
 
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Grid from '@mui/material/Grid'
-import { rows } from './dados'
 import Luluzinha from '../assets/fotos/luluzinha.jpg'
+import { rows } from './dados'
+
 type MonthsNumbers = 1 | 4 | 5 | 8 | 9 | 10 | 11 | 12
 type Months =
   | 'Janeiro'
@@ -172,27 +174,8 @@ const ListaAniversariantes = () => {
         </Box>
       </Grid>
       <Grid item xs={12} md={8} lg={8}>
-        {/* <Box
-          sx={{
-            display: 'flex',
-            // alignItems: 'center',
-            // justifyContent: 'center',
-          }}
-        >
-          <img
-            src={Luluzinha}
-            alt="Luluzinha"
-            width={60}
-            height={100}
-            //style={{ border: 'solid' }}
-          />
-          <Typography color="red">Luluzinha-2023</Typography>{' '}
-        </Box> */}
         <Box
           sx={{
-            // display: 'flex',
-            // alignItems: 'center',
-            // justifyContent: 'center',
             width: 800,
             '& .super-app-theme--header': {
               backgroundColor: 'rgba(246, 21, 14, 0.5)',
