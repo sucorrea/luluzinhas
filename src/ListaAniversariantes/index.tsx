@@ -9,9 +9,8 @@ import { Avatar } from '@mui/material'
 import { Icon } from '@iconify/react'
 
 import Box from '@mui/material/Box'
-import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-
+import Grid from '@mui/material/Grid'
 import { rows } from './dados'
 import Luluzinha from '../assets/fotos/luluzinha.jpg'
 type MonthsNumbers = 1 | 4 | 5 | 8 | 9 | 10 | 11 | 12
@@ -145,25 +144,23 @@ const ListaAniversariantes = () => {
         }}
       >
         <Box
-          sx={{ display: 'flex', alignItems: 'start', justifyContent: 'start' }}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
         >
           <img
             src={Luluzinha}
             alt="Luluzinha"
             width={60}
             height={100}
-            //style={{ border: 'solid' }}
+            style={{ paddingRight: 4 }}
           />
+          <Typography color="red">Luluzinha-2023</Typography>{' '}
         </Box>
-        <Typography
-          variant="h6"
-          color="red"
-          //sx={{ boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)' }}
-        >
-          Luluzinha 2023
-        </Typography>{' '}
       </Grid>
-      {/* <Grid
+      <Grid
         item
         xs={12}
         md={4}
@@ -173,18 +170,24 @@ const ListaAniversariantes = () => {
         <Box>
           <img src={Luluzinha} alt="Luluzinha" />
         </Box>
-      </Grid> */}
-
-      <Grid
-        item
-        xs={12}
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+      </Grid>
+      <Grid item xs={12} md={8} lg={8}>
+        {/* <Box
+          sx={{
+            display: 'flex',
+            // alignItems: 'center',
+            // justifyContent: 'center',
+          }}
+        >
+          <img
+            src={Luluzinha}
+            alt="Luluzinha"
+            width={60}
+            height={100}
+            //style={{ border: 'solid' }}
+          />
+          <Typography color="red">Luluzinha-2023</Typography>{' '}
+        </Box> */}
         <Box
           sx={{
             // display: 'flex',
