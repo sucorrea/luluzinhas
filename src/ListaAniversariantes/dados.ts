@@ -72,7 +72,7 @@ export const rows = [
       birthDate: new Date('2000-08-09'),
       responsavel: 'Carol Mori',
       foto: Aninha,
-      fotoResponsavel: Aninha,
+      fotoResponsavel: CarolMori,
       iconeSigno: 'noto-v1:leo',
     },
     {

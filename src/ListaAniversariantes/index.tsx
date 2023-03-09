@@ -126,7 +126,12 @@ const ListaAniversariantes = () => {
     <Grid
       container
       spacing={1}
-      sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(246, 21, 14, 0.005)',
+      }}
     >
       <Grid
         item
@@ -140,6 +145,15 @@ const ListaAniversariantes = () => {
         </Box>
       </Grid>
       <Grid item xs={12} md={8} lg={8}>
+        <Box>
+          <img
+            src={Luluzinha}
+            alt="Luluzinha"
+            width={60}
+            height={100}
+            //style={{ border: 'solid' }}
+          />
+        </Box>
         <Box
           sx={{
             // display: 'flex',
