@@ -1,18 +1,16 @@
-import React from 'react'
+import ListaAniversariantes from "./ListaAniversariantes";
+import { createTheme, ThemeProvider } from "@mui/material";
 
-import ListaAniversariantes from './ListaAniversariantes'
-import { createTheme, makeStyles, ThemeProvider } from '@mui/material'
-
-import './index.css'
+import "./index.css";
 
 const theme = createTheme({
-  typography: { fontFamily: ['Rubik', 'sans-serif'].join(',') },
-})
+  typography: { fontFamily: ["Rubik", "sans-serif"].join(",") },
+});
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <ListaAniversariantes />
   </ThemeProvider>
-)
+);
 
-export default App
+export default App;

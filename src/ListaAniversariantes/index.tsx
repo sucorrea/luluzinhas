@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import {
   DataGrid,
+  GridCellParams,
   GridColDef,
   GridRenderCellParams,
   GridValueGetterParams,
@@ -176,8 +177,11 @@ const ListaAniversariantes = () => {
           sx={{
             width: 800,
             "& .super-app-theme--header": {
-              backgroundColor:'#ff69b4',
+              backgroundColor: "#ff69b4",
               fontWeight: "bold",
+            },
+            "& .linha": {
+              backgroundColor: "rgba(157, 255, 118, 0.49)",
             },
           }}
         >
@@ -191,6 +195,12 @@ const ListaAniversariantes = () => {
             disableColumnMenu
             hideFooterPagination
             disableRowSelectionOnClick
+            getRowClassName={(params) => {
+              if (Number(params.id) % 2 === 0) {
+                return "linha";
+              }
+              return "";
+            }}
           />
         </Box>
       </Grid>
