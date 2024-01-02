@@ -176,7 +176,7 @@ const ListaAniversariantes = () => {
           sx={{
             width: 800,
             "& .super-app-theme--header": {
-              backgroundColor: "rgba(246, 21, 14, 0.5)",
+              backgroundColor:'#ff69b4',
               fontWeight: "bold",
             },
           }}
